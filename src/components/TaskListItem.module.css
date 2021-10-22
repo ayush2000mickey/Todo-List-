@@ -1,0 +1,58 @@
+.data-item {
+  margin: 1rem 0;
+  background: #06b2be;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 0.105;
+  align-items: center;
+}
+
+.actions div {
+  margin: 2px;
+  padding: 2px;
+}
+
+.checkbox input[type="checkbox"] {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  outline: 5px solid rgb(240, 186, 39);
+  background: #06b2be;
+}
+
+.edit {
+  color: #f8ac08;
+}
+
+.trash {
+  color: rgb(250, 62, 62);
+}
+
+@media screen and (max-width: 768px) {
+  .data-item {
+    flex-direction: column;
+  }
+
+  .name {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.button {
+  width: auto;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  background-color: aqua;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border: 1px solid #0acddb;
+  font: inherit;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #40d9ff;
+  border-color: #40d9ff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
+
+@media (min-width: 786px) {
+  .button {
+    width: 100%;
+  }
+}

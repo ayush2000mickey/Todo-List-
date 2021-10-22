@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.header {
+  background: hsl(0, 95%, 40%);
+  padding: 1rem;
+  display: flex;
+}
+
+.header i {
+  padding-right: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overlay {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  max-width: 80%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header {
+  background: #c70505;
+  text-align: center;
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.actions {
+  width: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    left: calc(50% - 15rem);
+    width: 30rem;
+  }
+}
